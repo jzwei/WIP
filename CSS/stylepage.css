@@ -73,3 +73,7 @@ h4 {
 .indent-75 {
 	margin-left: 75px;
 }
+
+.align-left {
+	margin-left: 0px;
+}
