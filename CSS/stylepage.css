@@ -1,0 +1,75 @@
+.container-margin {
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*IMAGE STUFF*/
+.image-size {
+	max-width: 800px;
+}
+.gif-size {
+	max-width: 1000px;
+}
+
+/*TEXT STUFF*/
+.underline {
+	text-decoration: underline;
+}
+.bold {
+	font-weight: bold;
+}
+
+/*LIST STUFF*/
+li {
+	margin-left: 40px;
+}
+
+/*TABLE STUFF*/
+table, th, td {
+	border: 1px solid black;
+	margin: 4px;
+}
+th, td {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+/*COLOR STUFF*/
+.temp-code {
+	font-style: italic;
+	color: blue;
+}
+.drop-code {
+	color: red;
+}
+.amend-code {
+	color: orange;
+}
+.approve-code {
+	color: lightgreen;
+}
+
+/*ALIGNMENT STUFF*/
+.align-right {
+	text-align: right;
+}
+
+h2 {
+	margin-left: 15px;
+}
+h3 {
+	margin-left: 25px;
+}
+h4 {
+	margin-left: 35px;
+}
+.summary {
+	margin-left: 45px;
+}
+.indent-55 {
+	margin-left: 55px;
+}
+.indent-75 {
+	margin-left: 75px;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="CSS/stylepage.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<title>WIP Documentation</title>
+ </head>
+ <body>
+ 	<body class="font">
+<!--NAVIGATION BAR BEGINS-->
+	<nav class="navbar navbar-default navbar-fixed-top nav-transparent">
+		<div class="container container-width">
+			<button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse nav-font-size">
+				<ul class="nav navbar-nav navbar-right nav-vert-center">
+					<li class="dropdown"> 
+	            		<a href="WIP.html" class="dropdown-toggle" data-toggle="dropdown">WIP Template<b class="caret"></b></a>
+			            	<ul class="dropdown-menu nav-font-size">
+								<li><a href="WIP-tab.html">WIP Tab</a></li>
+								<li><a href="results.html">Results</a></li>
+								<li><a href="label-maker.html">Label Maker Tab</a></li>
+								<li><a href="list-maker.html">List Maker Tab</a></li>
+								<li><a href="Data.html#">Data Tabs</a></li>
+							</ul>
+					</li>
+					<li class="dropdown"> 
+	            		<a href="working-sched.html" class="dropdown-toggle" data-toggle="dropdown">Working Schedule & Estimates File<b class="caret"></b></a>
+			            	<ul class="dropdown-menu nav-font-size">
+								<li><a href="working-sched.html">Working Sched</a></li>
+							</ul>
+					</li>
+					<li class="dropdown"> 
+	            		<a href="results.html" class="dropdown-toggle" data-toggle="dropdown">Results File<b class="caret"></b></a>
+			            	<ul class="dropdown-menu nav-font-size">
+								<li><a href="results.html">Results File</a></li>
+							</ul>
+					</li>
+		<!--about/contact link-->			
+					<li>
+						<a href="about.html">About & Contact</a>
+					</li>
+				</ul>
+			</div>
+	   	</div>
+    </nav>
+<!--NAVIGATION BAR ENDS-->
+
+	<div class="row col-lg-12 container-margin">
+		<h1 class="underline bold">WIP Tab</h1>
+		<p>Summary: This file tracks the lifecycle of design development programs, and their styles. Through status codes noted by the user at each stage, the data tabs pull useful statistics that show a summary of the category, and of the department as a whole. Statistics gathered show if there are trends that need to be examined, and more generally if the season is on track to reach adoption rate goals set by previous seasons.</p>
+		<h2 class="underline">Program Lines vs. Style Lines</h2>
+		<img src="images/WIP1.png" class="img-responsive center-block image-size" alt="WIP">
+		<ul>
+			<li>Program Line: summary of program status; shows most current relevant dates of recent changes within styles.</li>
+				<ul>
+					<li>Line color fill always remains white (no fill)</li>
+				</ul>
+			<li>Style Lines: each line represents one physical sample. Add lines when new samples are requested.</li>
+				<ul>
+					<li>Yellow Fill: New lines, or samples still in progress</li>
+					<li>Orange Fill: Samples no longer in development (either dropped fully, or being revised and a new sample is coming)</li>
+					<li>Green Fill: Approved Sample</li>
+				</ul>
+		</ul>
+		<h2 class="underline">Columns A through G:</h2>
+		<img src="images/A-to-G.png" class="img-responsive center-block image-size" alt="A to G">
+		<ol type="A">
+			<li>Sample Stage/Season:</li>
+				<ul>
+					<li>Program Lines: Season (ex: Fall 17)</li>
+					<li>Style Lines: Sample stage of development (ex: Initial, 1st, 2nd, 3rd, 4th)</li>
+				</ul>
+			<li>Status</li>
+				<ul>
+					<li>Program Lines: Shows latest date majority of styles estimated send date from vendor; if unknown says 'TBD'. Once sent from vendor updated to 'Sent'. Once sample is received, change status to 'Here', until the conclusion of the season when changed to outcome (Approved, or Dropped). When status is changed to 'Here', Actual Sample Received Date appears in Column W.</li>
+					<li>Style Lines: Shows date given by vendor for estimated sample send date; if unknown is 'TBD'; Once sent from vendor updated to 'Sent'. Once received, change status to 'Here', and do not change again. When status is changed to 'Here', Actual Sample Received Date appears in Column W.</li>
+				</ul>
+			<li>Comments</li>
+				<ul>
+					<li>Program Lines: Overall comments relating to ongoing status of the entire program. Changed to date approved (if approved), or reason for drop (if dropped) at the conclusion of the development season.</li>
+					<li>Style Lines: comments relevant to each individual sample.</li>
+				</ul>
+			<li>Lead Time</li>
+				<ul>
+					<li>Program Lines: Number (in days) that it takes to produce the product once approved (needed to prioritize approval times).</li>
+					<li>Style Lines: Unnecessary to fill in, will be the same as the Program level</li>
+				</ul>
+			<li>Class</li>
+				<ul>
+					<li>Program Lines: Number corresponding to the development category (1101 = Category 1)</li>
+					<li>Style Lines: Number corresponding to the development category (1102 = Category 2)</li>
+				</ul>
+			<li>P/F (Proto/Finalization)</li>
+				<ul>
+					<li>Program Lines:  Meeting in which the Program was effected, and the code (Column G) was changed.</li>
+					<li>Style Lines: Meeting in which the style was effected, and the code (Column G) was changed</li>
+				</ul>
+			<li>Code</li>
+				<ul>
+					<li>Program Lines: Status of the overall program (Program to-be-determined, Program Amended, Program OK, etc.)</li>
+					<li>Style Lines: Status of the individual style (TBD, OK, Dropped, Approved, etc.)</li>
+				</ul>
+				<div>
+		<h2 class="underline">Program and Style Codes (Column G)</h2>
+			<table>
+				<th colspan="2">Program Line Codes</th>
+				<tr class="temp-code">
+					<td>PTBD</td>
+					<td>Program To-Be-Determined</td>
+				</tr>
+				<tr class="temp-code">
+					<td class="align-right">PNEW</td>
+					<td>Program New</td>
+				</tr>
+				<tr class="temp-code">
+					<td class="align-right">POK</td>
+					<td>Program OK</td>
+				</tr>
+				<tr class="temp-code">
+					<td class="align-right">PAM</td>
+					<td>Program Amended</td>
+				</tr>
+				<tr class="approve-code">
+					<td>PA</td>
+					<td>Program Approved</td>
+				</tr>
+				<tr class="drop-code">
+					<td>PD</td>
+					<td>Program Dropped</td>
+				</tr>
+				<tr>
+					<td>PM</td>
+					<td>Program Moved</td>
+				</tr>
+				<tr>
+					<td>PND</td>
+					<td>Program Not Developed</td>
+				</tr>
+			</table>
+
+			<table>
+				<th colspan="2">Style Line Codes</th>
+					<tr class="temp-code">
+						<td>TBD</td>
+						<td>To Be Determined</td>
+					</tr>
+					<tr class="temp-code">
+						<td class="align-right">NEW</td>
+						<td>New Style</td>
+					</tr>
+					<tr class="temp-code">
+						<td class="align-right">NAMS</td>
+						<td>New Amended Sample</td>
+					</tr>
+					<tr class="temp-code">
+						<td class="align-right">NCA</td>
+						<td>New Color Add</td>
+					</tr>
+					<tr class="temp-code">
+						<td class="align-right">NSA</td>
+						<td>New Shape Add</td>
+					</tr>
+					<tr class="temp-code">
+						<td class="align-right">OK</td>
+						<td>OK, Reviewed with no change</td>
+					</tr>
+					<tr class="amend-code">
+						<td class="align-right">AMRC</td>
+						<td>Amended for Recolor</td>
+					</tr class="amend-code">
+					<tr class="amend-code">
+						<td class="align-right">AMQ</td>
+						<td>Amended for Quality</td>
+					</tr class="amend-code">
+					<tr class="amend-code">
+						<td class="align-right">AMD</td>
+						<td>Amended for Design</td>
+					</tr>
+					<tr class="amend-code">
+						<td class="align-right">AMSC</td>
+						<td>Amedned for Strategy Change</td>
+					</tr>
+					<tr class="amend-code">
+						<td class="align-right">AM$</td>
+						<td>Amended for Cost</td>
+					</tr>
+					<tr class="approve-code">
+						<td>A</td>
+						<td>Approved</td>
+					</tr>
+					<tr class="drop-code">
+						<td class="align-right">DD</td>
+						<td>Dropped for Design</td>
+					</tr>
+					<tr class="drop-code">
+						<td class="align-right">DQ</td>
+						<td>Dropped for Quality</td>
+					</tr>
+					<tr class="drop-code">
+						<td class="align-right">DC</td>
+						<td>Dropped for Cost</td>
+					</tr>
+					<tr class="drop-code">
+						<td class="align-right">DT</td>
+						<td>Dropped for Timing</td>
+					</tr>
+					<tr class="drop-code">
+						<td class="align-right">DO</td>
+						<td>Dropped for Other</td>
+					</tr class="drop-code">
+					<tr class="drop-code">
+						<td class="align-right">BO</td>
+						<td>Buyer Overdevelopment Drop</td>
+					</tr>
+					<tr class="drop-code">
+						<td class="align-right">ED</td>
+						<td>Executive Drop</td>
+					</tr>
+					<tr class="drop-code">
+						<td class="align-right">SC</td>
+						<td>Strategy Change Drop</td>
+					</tr>
+					<tr class="drop-code">
+						<td class="align-right">VO</td>
+						<td>Vendor Over-Sampled</td>
+					</tr>
+					<tr>
+						<td class="bold">M</td>
+						<td>Moved</td>
+					</tr>
+					<tr>
+						<td>SND</td>
+						<td>Style Not Developed</td>
+					</tr>
+			</table>
+		</div>
+			<h2 class="underline">Columns H through T</h2>
+			<h3>Specific details to each program, usually the same Program and Style lines per program</h3>
+			<img src="images/H-to-T.png" class="img-responsive center-block image-size" alt="H to T">
+				<li>Program Name</li>
+				<li>Style Number</li>
+				<li>Size</li>
+				<li>Item Description</li>
+				<li>Color Combo</li>
+				<li>Material</li>
+				<li>Agent</li>
+				<li>Factory</li>
+				<li>Theme</li>
+				<li>Room</li>
+				<li>Good/Better/Best Pricepoint</li>
+				<li>Priority</li>
+				<li>Designer</li>
+			<h2 class="underline">Columns U through AC</h2>
+			<img src="images/U-to-AC.png" class="img-responsive center-block image-size" alt="U to AC">
+				<li>Brief Deadline Date: deadline for design team to send direction to the Vendor</li>
+				<li>Brief Amend/Send Date: Actual send date of the original brief, or amendment direction.</li>
+				<li>Actual Sample Received Date: date the physical sample is received in the office.</li>
+				<li>Days Since Brief or Amendment Send Date (formula): number of days since the Brief or Amendment has been sent. This number counts up as days go by, but changes to a dash once the actual samples is received. Then the final sample time appears in Column AB. This number will not count up if the sample code (Column G) is SND (Sample Not Developed), or PND (Program Not Developed).</li>
+				<li>Sample Start Date: Date the factory actually begins making the sample.</li>
+				<li>Reason for Delay: Reason given if there is a delayed start date beyond 3 days of sending.</li>
+				<li>Days Since Brief or Amendment Start Date (formula): number of days since the Brief or Amendment has been started. This number counts up as days go by, but changes to a dash once the actual samples is received. Then the final sample time from Start date appears in Column AC. This number will not count up if the sample code (Column G) is SND (Sample Not Developed), or PND (Program Not Developed).</li>
+				<li>Final Sample Time from Send Date (formula): final number of days between brief/amend send, and sample received in the office; number appears only after the actual sample is received.</li>
+				<li>Final Sample Time From Start Date (formula): final number of days between brief/amend sample started, and sample received in the office; number appears only after the actual sample is received.</li>
+			<img src="images/WIP_Dates.gif" class="img-responsive center-block" alt="Date gif">
+		</ol>
+	</div>
+ </body>
+ </html>
