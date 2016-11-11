@@ -19,34 +19,37 @@
 				<span class="icon-bar"></span>
 			</button>
 			<div class="collapse navbar-collapse navHeaderCollapse nav-font-size">
-				<ul class="nav navbar-nav navbar-right nav-vert-center">
-					<li class="dropdown"> 
-	            		<a href="WIP.html" class="dropdown-toggle" data-toggle="dropdown">WIP Template<b class="caret"></b></a>
-			            	<ul class="dropdown-menu nav-font-size">
-								<li><a href="WIP-tab.html">WIP Tab</a></li>
-								<li><a href="label-maker.html">Label & Agenda Maker Tab</a></li>
-								<li><a href="list-maker.html">List Maker Tab</a></li>
-								<li><a href="Data.html#">Data Tabs</a></li>
-								<li><a href="code-tab.html">Code Tab</a></li>
-							</ul>
-					</li>
-					<li class="dropdown"> 
-	            		<a href="working-sched.html" class="dropdown-toggle" data-toggle="dropdown">Working Schedule & Estimates File<b class="caret"></b></a>
-			            	<ul class="dropdown-menu nav-font-size">
-								<li><a href="working-sched.html">Working Sched</a></li>
-							</ul>
-					</li>
-					<li class="dropdown"> 
-	            		<a href="results.html" class="dropdown-toggle" data-toggle="dropdown">Results File<b class="caret"></b></a>
-			            	<ul class="dropdown-menu nav-font-size">
-								<li><a href="results.html">Results File</a></li>
-							</ul>
-					</li>
-		<!--about/contact link-->			
-					<li>
-						<a href="about.html">About & Contact</a>
-					</li>
-				</ul>
+				<a class="navbar-brand" href="index.html">WIP</a>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right nav-vert-center">
+						<li class="dropdown"> 
+		            		<a href="WIP-tab.html" class="dropdown-toggle" data-toggle="dropdown">WIP Template<b class="caret"></b></a>
+				            	<ul class="dropdown-menu nav-font-size">
+									<li><a href="WIP-tab.html">WIP Tab</a></li>
+									<li><a href="#label-tab">Label & Agenda Maker Tab</a></li>
+									<li><a href="#list-tab">List Maker Tab</a></li>
+									<li><a href="#data-tabs">Data Tabs</a></li>
+									<li><a href="#codes">Code Tab</a></li>
+								</ul>
+						</li>
+						<li class="dropdown"> 
+		            		<a href="working-sched.html" class="dropdown-toggle" data-toggle="dropdown">Working Schedule & Estimates File<b class="caret"></b></a>
+				            	<ul class="dropdown-menu nav-font-size">
+									<li><a href="working-sched.html">Working Sched</a></li>
+								</ul>
+						</li>
+						<li class="dropdown"> 
+		            		<a href="results.html" class="dropdown-toggle" data-toggle="dropdown">Results File<b class="caret"></b></a>
+				            	<ul class="dropdown-menu nav-font-size">
+									<li><a href="results.html">Results File</a></li>
+								</ul>
+						</li>
+			<!--about/contact link-->			
+						<li>
+							<a href="about.html">About & Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 	   	</div>
     </nav>
@@ -60,54 +63,55 @@
 		<img src="images/WIP.jpg" class="img-responsive center-block image-size" alt="WIP">
 	</div>
 	<h2 class="underline bold">Tabs</h2>
-		<h3 class="underline">WIP Tab</h3>
+		<h3 class="underline" id="WIP-tab">WIP Tab</h3>
 			<div class="summary">
 				<p>The WIP Tab is where all data is entered by the user. White lines are the header lines for each program, and each colored line below it represents an actual, physical sample within that program.</p>
-				<p><a href="WIP.html">Click here </a>for more information about the WIP tab and information it needs and gathers.</p>
+				<p><a href="WIP-tab.html">Click here </a>for more information about the WIP tab and information it needs and gathers.</p>
 			</div>
-		<h3 class="underline">Label, Agenda Maker Tab</h3>
+		<h3 class="underline" id="label-tab">Label, Agenda Maker Tab</h3>
 			<div class="summary">
 				<p>This tab takes information from the WIP Tab to concatenate three types of labels-- one for printed paper labels, one for naming photos, and the last for creating agenda items. This can be done manually by filtering and pasting from the WIP tab, or this can be done automatically by running the appropriate Macros.</p>
 				<img src="images/label-maker.gif" class="img-responsive center-block gif-size" alt="Label Tab">
 			</div>
-		<h3 class="underline">List Making Tab</h3>
+		<h3 class="underline" id="list-tab">List Making Tab</h3>
 			<div class="summary">
 				<p>This tab takes data fromt the WIP tab and reorders it for use in the 'Working Schedule & Estimates' file, and the 'Results' file as needed. Data is taken on the Program level, to summarize in partner documents. Data can be filtered and pulled manually from the WIP tab, or can be done automatically by running the appropriate Macros.</p>
 				<img src="images/list-maker.gif" class="img-responsive center-block gif-size" alt="List Making Tab">
 			</div>
-		<h3 class="underline">Data Tabs</h3>
+		<h3 class="underline" id="data-tabs">Data Tabs</h3>
 			<div class="summary">
 				<p>All Data Tabs show statitistical information broken down by Program level on the left side, and by Style level on the right side.</p>
 				<p class="indent-55">By Program:<img src="images/by-class-program.jpg" class="img-responsive center-block" alt="By Class Data Tab"></p>
 				<p class="indent-55">By Style:<img src="images/by-class-style.jpg" class="img-responsive center-block" alt="By Class Data Tab"></p>
-				<p class="indent-55">Data shown by Style can be expanded into more detailed breakdowns, showing 'reason codes':</p>
+				<p class="indent-55">Data can be shown by meeting stage by noting a 'P' or an 'F' in the pink cell on top. If left blank, data shows in entirety. By writing a 'P', only data effected during the Proto meeting will be shown. By wiriting an 'F', only data effected during the Finalization meeting will be shown. If left blank, all data shows.<img src="images/P-and-F.gif" class="img-responsive center-block gif-size" alt="P and F indication"></p>
+				<p class="indent-55">On the right side, data shown by Style can be expanded into more detailed breakdowns, showing 'reason codes':</p>
 					<div>
 						<p class="indent-75">New Sample and New Add reason codes:<img src="images/new-style-expand.gif" class="img-responsive center-block gif-size" alt="New reason expand"></p>
 						<p class="indent-75">Amendment reason codes:<img src="images/amend-reason-expand.gif" class="img-responsive center-block gif-size" alt="Amend reason expand"></p>
 						<p class="indent-75">Drop reason codes:<img src="images/drop-reason-expand.gif" class="img-responsive center-block gif-size" alt="Drop reason expand"></p>
 					</div>
 			</div>
-			<h4 class="underline">By Class</h4>
+			<h4 class="underline" id="by-class">By Class</h4>
 				<div class="summary">
 					<p>The 'By Class' data tab shows statistics broken out by Class Category.</p>
 					<img src="images/by-class.jpg" class="img-responsive center-block image-size" alt="By Class Data Tab">
 				</div>
-			<h4 class="underline">By Vendor</h4>
+			<h4 class="underline" id="by-vendor">By Vendor</h4>
 				<div class="summary">
 					<p>The 'By Vendor' data tab shows statistics broken out by each Vendor.</p>
 					<img src="images/by-vendor.jpg" class="img-responsive center-block image-size" alt="By Vendor Data Tab">
 				</div>
-			<h4 class="underline">By Designer, Theme</h4>
+			<h4 class="underline" id="by-designer">By Designer, Theme</h4>
 				<div class="summary">
 					<p>The 'By Designer, Theme' data tab shows statistics broken out by each designer, and below by theme, and room.</p>
 					<img src="images/by-designer.jpg" class="img-responsive center-block image-size" alt="By Designer Data Tab">
 				</div>
-			<h4 class="underline">Stage and Time</h4>
+			<h4 class="underline" id="stage-and-time">Stage and Time</h4>
 				<div class="summary">
 					<p>The 'Stage and Time' data tab shows statistics broken out by sampling stage, by Class Category, and below by Vendor. This details how many initial samples were approved, amended, dropped, etc., as well as the average sampling time.</p>
 					<img src="images/stage-and-time.jpg" class="img-responsive center-block image-size" alt="Stage and Time Tab">
 				</div>
-		<h3 class="underline">Code Key, Drop Down Lists</h3>
+		<h3 class="underline" id="codes">Code Key, Drop Down Lists</h3>
 			<div class="summary">
 				<p>This tab is a reference for all Codes, and is the source of the drop-down-list options needed on the WIP tab.  The Code Key also shows an explaination of each status code that can be used on the Program level, or Style level.</p>
 				<div class="row ">
