@@ -1,3 +1,22 @@
+body {
+	background-color: #FFFAFA;
+}
+
+.font {
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	color: dimgrey;
+}
+
+.nav-color {
+	background-color: white;
+}
+
+hr.line-break { /*gradient line break between sections*/
+  border: 0; 
+  height: 2px; 
+  background-image: -webkit-linear-gradient(left, white, white, white);
+}
+
 .container-margin {
 	margin-top: 30px;
 	margin-right: 10px;
