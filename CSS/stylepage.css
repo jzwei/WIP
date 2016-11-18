@@ -26,9 +26,15 @@ hr.line-break { /*gradient line break between sections*/
 /*IMAGE STUFF*/
 .image-size {
 	max-width: 800px;
+	padding: 10px;
 }
 .gif-size {
 	max-width: 1000px;
+	padding: 10px;
+}
+.est-time-size {
+	max-height: 200px;
+	padding: 10px;
 }
 
 /*TEXT STUFF*/
