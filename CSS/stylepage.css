@@ -79,7 +79,9 @@ th, td {
 .align-right {
 	text-align: right;
 }
-
+h1 {
+	margin-left: 10px;
+}
 h2 {
 	margin-left: 15px;
 }
