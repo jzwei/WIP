@@ -23,6 +23,15 @@ hr.line-break { /*gradient line break between sections*/
 	margin-left: 10px;
 }
 
+/*NAVBAR STUFF*/
+.caret1 {
+    position: absolute !important; top: 0; right: 0;
+}
+
+.dropdown-toggle.disabled {
+    padding-right: 40px;
+}
+
 /*IMAGE STUFF*/
 .image-size {
 	max-width: 800px;
