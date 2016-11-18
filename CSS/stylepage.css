@@ -10,7 +10,9 @@ body {
 .nav-color {
 	background-color: white;
 }
-
+.container-width { /*restricting the width of the container*/
+		width: 90%;
+	}
 hr.line-break { /*gradient line break between sections*/
   border: 0; 
   height: 2px; 
@@ -25,11 +27,13 @@ hr.line-break { /*gradient line break between sections*/
 
 /*IMAGE STUFF*/
 .image-size {
-	max-width: 800px;
+	max-width: 100%;
+	/*max-width: 800px;*/
 	padding: 10px;
 }
 .gif-size {
-	max-width: 1000px;
+	max-width: 100%;
+	/*max-width: 1000px;*/
 	padding: 10px;
 }
 .est-time-size {
