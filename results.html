@@ -29,18 +29,19 @@
 <!--NAVIGATION BAR BEGINS-->
 	<nav class="navbar navbar-default navbar-fixed-top nav-color">
 		<div class="container container-width">
+
 		<a class="navbar-brand" href="index.html">WIP</a>
-			<button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+			<button class="navbar-toggle btn-sm" data-toggle = "collapse" data-target = ".navHeaderCollapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<div class="collapse navbar-collapse navHeaderCollapse nav-font-size">
 
+			<div class="collapse navbar-collapse navHeaderCollapse nav-font-size">
 					<ul class="nav navbar-nav navbar-right nav-vert-center">
-						<li class="dropdown"> 
-		            		
+		
 					<!-- WIP LINKS -->
+						<li class="dropdown"> 
 		            		<a href="WIP-tab.html" class="dropdown-toggle" data-toggle="dropdown">WIP Template<b class="caret"></b></a>
 				            	<ul class="dropdown-menu nav-font-size">
 									<li><a href="WIP-tab.html">WIP Tab</a></li>
@@ -56,7 +57,7 @@
 						<li class="dropdown"> 
 		            		<a href="working-sched.html" class="dropdown-toggle" data-toggle="dropdown">Working Schedule & Estimates File<b class="caret"></b></a>
 				            	<ul class="dropdown-menu nav-font-size">
-									<li><a href="working-sched.html#ws-category">Category Tabs</a></li>
+									<li><a href="working-sched.html#ws-category-tabs">Category Tabs</a></li>
 									<li><a href="working-sched.html#ws-totals-tab">Totals Tab</a></li>
 								</ul>
 						</li>
@@ -65,8 +66,8 @@
 						<li class="dropdown"> 
 		            		<a href="results.html" class="dropdown-toggle" data-toggle="dropdown">Results File<b class="caret"></b></a>
 				            	<ul class="dropdown-menu nav-font-size">
-									<li><a href="#res-category-tab">Category Tabs</a></li>
-									<li><a href="res-totals-tab">Totals Tab</a></li>
+									<li><a href="#res-category-tabs">Category Tabs</a></li>
+									<li><a href="#res-totals-tab">Totals Tab</a></li>
 								</ul>
 						</li>
 					
@@ -75,18 +76,18 @@
 							<a href="http://janemz.com/resume">About & Contact</a>
 						</li>
 					</ul>
-			</div>
+				</div>
 	   	</div>
     </nav>
 <!--NAVIGATION BAR ENDS-->
 
 <!-- RESULTS FILE -->
 	<div class="row col-lg-12 container-margin">
-		<h1 class="underline bold">Results File</h1>
+		<h1 class="underline bold" id="results">Results File</h1>
 			<p class="summary"><span class="bold"> Summary: </span>The Results file is used to summarize the outcome of the two major meetings during the development season--Proto Results and Finalization Results.
 			</p>
 	<!-- CATEGORY TABS -->
-			<h2 class="underline" class="results-category">Category Tabs</h2>
+			<h2 class="underline" id="res-category-tabs">Category Tabs</h2>
 				<p class="summary">Using the <a href="index.html#list-tab">List Making tab</a> in the WIP file, Program level data is entered and sorted by outcome. The summary chart then totals the categories by outcome to show if the target adoption rate has been reached.  Conditional formatting is used to visually show if a target has been reached.
 			</p>
 				<img src="images/results.gif" class="img-responsive center-block gif-size" alt="">
@@ -97,6 +98,12 @@
 					The Results Totals Tab summarizes each category's seasonal outcome for quick reference. 
 				</p>
 					<img src="images/results-totals.jpg" class="img-responsive center-block image-size" alt="results totals tab">
+
+	<!-- TOTALS MACROS -->
+			<h2 class="underline" id="res-macros">Macros</h2>
+				<p class="summary">
+					The results file macros are used to maintain the conditional formatting of the summary charts.
+				</p>
 
 	</div>
 </body>
