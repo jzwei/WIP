@@ -101,6 +101,7 @@
 	<!-- DATA SUMMARY CHART-->
 		<h3 class="underline">Data Summary Chart</h3>
 			<p class="summary">The Data Summary chart shows in detail how many products in each category will be present for each meeting date. Based on the estimated arrival dates given below for each program, the formulas in the Data Summary chart determine what will make it in time for the meeting. If a program is listed below as 'Proto Chase' it will not be counted in the 'Active Programs' column until it has a send date.</p>
+			<p class="summary">Example formula: Cell L3 counts number of Category 1 samples that will miss the first meeting =COUNTIFS($D$20:$D$290,$E3,$Q$20:$Q$290,$Z$4)+COUNTIFS($D$20:$D$290,$E3,$Q$20:$Q$290,$Z$3)+COUNTIFS($D$20:$D$290,$E3,$Q$20:$Q$290,">=" & ($C$9-1))</p>
 				<img src="images/ws-estimates.jpg" class="img-responsive center-block image-size" alt="Estimates">
 			<p class="summary">Based on the user input program send dates below, the Data Summary chart populates each meeting date column with the number of programs that will be present to review on the respective date. Changing the sample send dates updates the Data Summary chart immediately, as well as the visual conditional formatting of the Program lines.</p>
 				<img src="images/ws-date-chart.gif" class="img-responsive center-block gif-size" alt="Updating dates">
@@ -114,7 +115,7 @@
 
 <!--WS MACROS -->
 		<h2 class="underline" id="ws-macros">Macros</h2>
-			<p>Macros in the Working Schedule & Estimates file are used to maintain the conditional formatting of the program line data. There is all a macro written that will sort the program lines according to class, vendor send date, brief/amend send date, and program name..
+			<p>Macros in the Working Schedule & Estimates file are used to maintain the conditional formatting of the program line data. There is all a macro written that will sort the program lines according to class, vendor send date, brief/amend send date, and program name.
 			</p>
 
 	</div>

@@ -295,13 +295,14 @@
 				<li>Brief Deadline Date: Deadline for design team to send direction to the Vendor.</li>
 				<li>Brief Amend/Send Date: Actual send date of the original brief, or amendment direction.</li>
 				<li>Actual Sample Received Date: Date the physical sample is received in the office.</li>
-				<li>Days Since Brief or Amendment Send Date (formula): Number of days since the Brief or Amendment has been sent. This number counts up as days go by, but changes to a dash once the actual sample is received. Then the final sample time appears in Column AB. This number will not count up if the sample code (Column G) is SND (Sample Not Developed), or PND (Program Not Developed).</li>
+				<li>Days Since Brief or Amendment Send Date (formula): Number of days since the Brief or Amendment has been sent. This number counts up as days go by, but changes to a dash once the actual sample is received. Then the final sample time appears in Column AB. This number will not count up if the sample code (Column G) is SND (Sample Not Developed), or PND (Program Not Developed). FORMULA: =IF(G2="SND","-",IF(G2="PND","-",IF(ISBLANK(V2),"-",IF(AB2="-",(TODAY()-V2),"-"))))</li>
 				<li>Sample Start Date: Date the factory actually begins making the sample.</li>
 				<li>Reason for Delay: Reason given if there is a delayed start date beyond 3 days of sending.</li>
-				<li>Days Since Brief or Amendment Start Date (formula): Number of days since the Brief or Amendment has been started. This number counts up as days go by, but changes to a dash once the actual samples is received. Then the final sample time from Start date appears in Column AC. This number will not count up if the sample code (Column G) is SND (Sample Not Developed), or PND (Program Not Developed).</li>
-				<li>Final Sample Time from Send Date (formula): final number of days between brief/amend send, and sample received in the office; number appears only after the actual sample is received.</li>
-				<li>Final Sample Time From Start Date (formula): Final number of days between brief/amend sample started, and sample received in the office; number appears only after the actual sample is received.</li>
+				<li>Days Since Brief or Amendment Start Date (formula): Number of days since the Brief or Amendment has been started. This number counts up as days go by, but changes to a dash once the actual samples is received. Then the final sample time from Start date appears in Column AC. This number will not count up if the sample code (Column G) is SND (Sample Not Developed), or PND (Program Not Developed). FORMULA: =IF(G2="SND","-",IF(G2="PND","-",IF(ISBLANK(Y2),"-",IF(AB2="-",(TODAY()-Y2),"-"))))</li>
+				<li>Final Sample Time from Send Date (formula): final number of days between brief/amend send, and sample received in the office; number appears only after the actual sample is received. FORMULA: =IF(W2="-","-",IF(ISBLANK(W2),"-",IF(ISBLANK(V2),"-",(W2-V2))))</li>
+				<li>Final Sample Time From Start Date (formula): Final number of days between brief/amend sample started, and sample received in the office; number appears only after the actual sample is received. FORMULA: =IF(W2="-","-",IF(ISBLANK(W2),"-",IF(ISBLANK(Y2),"-",(W2-Y2))))</li>
 			<img src="images/WIP_Dates.gif" class="img-responsive center-block" alt="Date gif">
+
 		</ol>
 	</div>
 
@@ -327,6 +328,7 @@
 		<h1 class="underline bold" id="data-tabs">Data Tabs</h1>
 			<div class="summary">
 				<p>All Data Tabs show statistical information broken down by program level on the left side, and by style level on the right side.</p>
+				<p>Example formula: (cell J6) =IF(ISBLANK($B$5),COUNTIFS(WIP!$G$2:$G$5525,J$5,WIP!$E$2:$E$5525,$B6),COUNTIFS(WIP!$G$2:$G$5525,J$5,WIP!$E$2:$E$5525,$B6,WIP!$F$2:$F$5525,$B$5))</p>
 				<p class="indent-55">By Program:<img src="images/by-class-program.jpg" class="img-responsive center-block" alt="By Class Data Tab"></p>
 				<p class="indent-55">By Style:<img src="images/by-class-style.jpg" class="img-responsive center-block" alt="By Class Data Tab"></p>
 				<p class="indent-55">For all data tabs, statistics can be shown by meeting stage by noting a 'P' or an 'F' in the pink cell on top. By writing a 'P', only data affected during the Proto meeting will be shown. By writing an 'F', only data affected during the Finalization meeting will be shown. If left blank, all data shows.<img src="images/P-and-F.gif" class="img-responsive center-block gif-size" alt="P and F indication"></p>
@@ -359,6 +361,7 @@
 			<h2 class="underline" id="stage-and-time">Stage and Time Data Tab</h2>
 				<div class="summary">
 					<p>The 'Stage and Time' data tab shows statistics broken out by sampling stage, by Class Category, and below by Vendor. This details how many initial samples were approved, amended, dropped, etc., as well as the average sampling time.</p>
+					<p>Example formula: (cell E6) =COUNTIFS(WIP!$A$2:$A$4137,E$4,WIP!$E$2:$E$4137,$B6)-COUNTIFS(WIP!$A$2:$A$4137,E$4,WIP!$E$2:$E$4137,$B6,WIP!$G$2:$G$4137,"SND")-COUNTIFS(WIP!$A$2:$A$4137,E$4,WIP!$E$2:$E$4137,$B6,WIP!$G$2:$G$4137,"Swatch")</p>
 					<img src="images/stage-and-time.jpg" class="img-responsive center-block image-size" alt="Stage and Time Tab">
 				</div>
 	<!-- CODES TAB -->
